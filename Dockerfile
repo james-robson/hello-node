@@ -1,4 +1,4 @@
 FROM node:4.4.7
-EXPOSE 9090
+EXPOSE 8080
 COPY server.js .
 CMD node server.js
