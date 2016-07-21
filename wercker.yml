@@ -35,3 +35,6 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
 
+deploy:
+    steps:
+        - zii/EBDeploy@2.0.1
