@@ -4,7 +4,7 @@
   "description": "A simple hello world app. Mostly used to test deployment.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "start": "node server.js"
   },
   "repository": {
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/james-robson/hello-node/issues"
   },
-  "homepage": "https://github.com/james-robson/hello-node#readme"
+  "homepage": "https://github.com/james-robson/hello-node#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^2.5.3",
+    "request": "^2.73.0"
+  }
 }
